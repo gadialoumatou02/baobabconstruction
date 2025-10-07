@@ -1,160 +1,120 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Baobab Construction – Qualité & Esthétique</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Entreprise BTP basée à Linguère (Louga). Construction, réhabilitation, plans, devis, suivi de chantiers." />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/baobab.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  </head>
-  <body class="is-preload">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baobab Construction – Qualité & Esthétique</title>
+  <meta name="description" content="Entreprise BTP basée à Linguère (Louga). Construction, réhabilitation, plans, devis, suivi de chantiers.">
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
 
-    <div id="page-wrapper">
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Baobab Construction">
+      <span class="title">Baobab Construction</span>
+    </a>
+    <button class="menu-btn" aria-label="Menu" onclick="toggleMenu()">☰</button>
+    <nav id="menu" class="menu">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="realisations.html">Nos réalisations</a>
+      <a href="services.html">Nos services</a>
+      <a href="projets.html">Nos projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-      <!-- Header -->
-      <header id="header" class="alt">
-        <h1>
-          <a href="index.html">
-            <img src="images/logo.png" alt="Baobab Construction" class="brand-logo">
-            Baobab Construction
-          </a>
-        </h1>
-        <nav>
-          <a href="#menu">Menu</a>
-        </nav>
-      </header>
-
-      <!-- Menu -->
-      <nav id="menu">
-        <div class="inner">
-          <h2>Menu</h2>
-          <ul class="links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="realisations.html">Nos réalisations</a></li>
-            <li><a href="services.html">Nos services</a></li>
-            <li><a href="projets.html">Nos projets</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <a href="#" class="close">Fermer</a>
-        </div>
-      </nav>
-
-      <!-- Banner / Présentation -->
-      <section id="banner" class="banner-home">
-        <div class="inner">
-          <div class="logo"><span class="icon solid fa-building"></span></div>
-          <h2>Baobab Construction</h2>
-          <p class="slogan"><em>Nos racines bâtissent vos projets, avec la solidité du baobab et la précision du bâtisseur.</em></p>
-          <p>Entreprise BTP basée à Linguère (Louga). Interventions à Linguère, Dakar, Kaolack et partout au Sénégal.</p>
-          <ul class="actions">
-            <li><a href="realisations.html" class="button primary">Voir nos réalisations</a></li>
-            <li><a href="services.html" class="button">Découvrir nos services</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Présentation société -->
-      <section id="wrapper">
-        <section class="wrapper alt style1">
-          <div class="inner">
-            <h2 class="major">Qui sommes-nous ?</h2>
-            <p>
-              Baobab Construction est une entreprise générale de bâtiment et travaux publics ancrée à Linguère.
-              Nous concevons, réalisons et réhabilitons des ouvrages avec une exigence de qualité, d’esthétique et de durabilité.
-            </p>
-          </div>
-        </section>
-
-        <!-- Mot du dirigeant -->
-        <section class="wrapper spotlight style1">
-          <div class="inner">
-            <a class="image"><img src="images/dirigeant.jpg" alt="Dirigeant Baobab Construction" /></a>
-            <div class="content">
-              <h2 class="major">Mot du dirigeant</h2>
-              <p>
-                « Notre ambition est simple : bâtir des projets solides et beaux, utiles aux communautés.
-                Forts de nos racines et d’un savoir-faire rigoureux, nous honorons chaque engagement, du devis à la livraison. »
-              </p>
-              <p class="signature">— Le Gérant, Baobab Construction</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Statistiques + Témoignages -->
-        <section class="wrapper style2">
-          <div class="inner">
-            <h2 class="major">Quelques chiffres</h2>
-            <div class="stats-grid">
-              <div class="stat">
-                <div class="stat-value">25+</div>
-                <div class="stat-label">chantiers livrés</div>
-              </div>
-              <div class="stat">
-                <div class="stat-value">3</div>
-                <div class="stat-label">régions d’intervention</div>
-              </div>
-              <div class="stat">
-                <div class="stat-value">100%</div>
-                <div class="stat-label">délais respectés</div>
-              </div>
-              <div class="stat">
-                <div class="stat-value">A</div>
-                <div class="stat-label">niveau de finition</div>
-              </div>
-            </div>
-
-            <h2 class="major" style="margin-top:2.5rem">Témoignages</h2>
-            <section class="features">
-              <article>
-                <h3 class="major">M. S., Promoteur – Dakar</h3>
-                <p>« Travail sérieux, finitions soignées, délais tenus. Je recommande. »</p>
-              </article>
-              <article>
-                <h3 class="major">Mme A., Institution – Kaolack</h3>
-                <p>« Équipe rigoureuse et réactive. Très bonne coordination de chantier. »</p>
-              </article>
-            </section>
-          </div>
-        </section>
-
-        <!-- Bloc Contact (raccourci) -->
-        <section class="wrapper style3">
-          <div class="inner">
-            <h2 class="major">Contact</h2>
-            <p>Parlons de votre projet. Réponse rapide et précise.</p>
-            <ul class="contact-list">
-              <li>📍 Linguère, Région de Louga, Sénégal</li>
-              <li>📞 +221 77 123 45 67</li>
-              <li>✉️ Email : en cours de création</li>
-              <li>🌍 Portfolio : <a href="https://baobabconstruction.github.io" target="_blank">baobabconstruction.github.io</a></li>
-            </ul>
-            <ul class="actions">
-              <li><a href="contact.html" class="button">Formulaire de contact</a></li>
-            </ul>
-          </div>
-        </section>
-      </section>
-
-      <!-- Footer -->
-      <section id="footer">
-        <div class="inner">
-          <ul class="copyright">
-            <li>&copy; Baobab Construction. Tous droits réservés.</li>
-            <li>Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a> • Intégration: Baobab Construction</li>
-          </ul>
-        </div>
-      </section>
-
+<section class="hero">
+  <div class="container">
+    <h1 class="m0">Baobab Construction</h1>
+    <p class="slogan">« Nos racines bâtissent vos projets, avec la solidité du baobab et la précision du bâtisseur. »</p>
+    <p>Entreprise BTP basée à Linguère (Louga). Interventions à Linguère, Dakar, Kaolack et partout au Sénégal.</p>
+    <div class="actions">
+      <a href="realisations.html" class="btn primary">Voir nos réalisations</a>
+      <a href="services.html" class="btn">Découvrir nos services</a>
     </div>
+  </div>
+</section>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+<main>
+  <!-- Présentation société -->
+  <section class="section alt">
+    <div class="container">
+      <h2>Qui sommes-nous ?</h2>
+      <p class="lead">Entreprise générale de bâtiment et travaux publics ancrée à Linguère. Nous concevons, réalisons et réhabilitons des ouvrages avec une exigence de qualité, d’esthétique et de durabilité.</p>
+    </div>
+  </section>
+
+  <!-- Mot du dirigeant -->
+  <section class="section">
+    <div class="container grid cols-2">
+      <div>
+        <img src="images/dirigeant.jpg" alt="Dirigeant Baobab Construction" style="width:100%;border-radius:12px;border:1px solid var(--neutral);background:#fff">
+      </div>
+      <div>
+        <h2>Mot du dirigeant</h2>
+        <p>« Notre ambition est simple : bâtir des projets solides et beaux, utiles aux communautés. Forts de nos racines et d’un savoir-faire rigoureux, nous honorons chaque engagement, du devis à la livraison. »</p>
+        <p class="m0"><strong>— Le Gérant, Baobab Construction</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistiques -->
+  <section class="section neutral">
+    <div class="container">
+      <h2>Quelques chiffres</h2>
+      <div class="stats">
+        <div class="stat"><div class="v">25+</div><div class="k">chantiers livrés</div></div>
+        <div class="stat"><div class="v">3</div><div class="k">régions d’intervention</div></div>
+        <div class="stat"><div class="v">100%</div><div class="k">délais respectés</div></div>
+        <div class="stat"><div class="v">A</div><div class="k">niveau de finition</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="section alt">
+    <div class="container">
+      <h2>Témoignages</h2>
+      <div class="testi">
+        <div class="quote">
+          <p>« Travail sérieux, finitions soignées, délais tenus. Je recommande. »</p>
+          <div class="name">M. S., Promoteur – Dakar</div>
+        </div>
+        <div class="quote">
+          <p>« Équipe rigoureuse et réactive. Très bonne coordination de chantier. »</p>
+          <div class="name">Mme A., Institution – Kaolack</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact court -->
+  <section class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <ul class="list">
+        <li>📍 Linguère, Région de Louga, Sénégal</li>
+        <li>📞 +221 77 123 45 67</li>
+        <li>✉️ Email : en cours de création</li>
+        <li>🌍 Portfolio : <a href="https://baobabconstruction.github.io" target="_blank">baobabconstruction.github.io</a></li>
+      </ul>
+      <div class="actions" style="margin-top:10px">
+        <a class="btn" href="contact.html">Formulaire de contact</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <div>© Baobab Construction. Tous droits réservés.</div>
+    <div>Design & Intégration : Baobab Construction</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
 </html>

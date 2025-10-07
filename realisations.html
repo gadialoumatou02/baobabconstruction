@@ -1,79 +1,59 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Nos réalisations – Baobab Construction</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/baobab.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  </head>
-  <body class="is-preload">
-    <div id="page-wrapper">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nos réalisations – Baobab Construction</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt=""><span class="title">Baobab Construction</span></a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="menu" class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="realisations.html" class="active">Nos réalisations</a>
+      <a href="services.html">Nos services</a>
+      <a href="projets.html">Nos projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-      <header id="header" class="alt">
-        <h1><a href="index.html"><img src="images/logo.png" class="brand-logo" alt="">Baobab Construction</a></h1>
-        <nav><a href="#menu">Menu</a></nav>
-      </header>
+<section class="hero"><div class="container"><h1 class="m0">Nos réalisations</h1><p>Qualité, esthétique et durabilité.</p></div></section>
 
-      <nav id="menu">
-        <div class="inner">
-          <h2>Menu</h2>
-          <ul class="links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="realisations.html">Nos réalisations</a></li>
-            <li><a href="services.html">Nos services</a></li>
-            <li><a href="projets.html">Nos projets</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <a href="#" class="close">Fermer</a>
+<main>
+  <section class="section alt">
+    <div class="container grid cols-3">
+      <article class="card">
+        <img src="images/projets/projet1.jpg" alt="Complexe résidentiel – Dakar">
+        <div class="p">
+          <h3 class="m0">Complexe résidentiel – Dakar</h3>
+          <p>2 500 m² • 12 mois • Livraison 2024 • Client privé</p>
         </div>
-      </nav>
-
-      <section id="banner" class="sub-banner">
-        <div class="inner">
-          <h2>Nos réalisations</h2>
-          <p>Exemples de chantiers livrés — qualité, esthétique et durabilité.</p>
+      </article>
+      <article class="card">
+        <img src="images/projets/projet2.jpg" alt="Réhabilitation mairie – Kaolack">
+        <div class="p">
+          <h3 class="m0">Réhabilitation mairie – Kaolack</h3>
+          <p>Renforcement structurel • Mise aux normes</p>
         </div>
-      </section>
-
-      <section class="wrapper alt style1">
-        <div class="inner">
-          <section class="features">
-            <article>
-              <a href="images/projets/projet1.jpg" class="image"><img src="images/projets/projet1.jpg" alt="Complexe résidentiel – Dakar" /></a>
-              <h3 class="major">Complexe résidentiel – Dakar</h3>
-              <p>2 500 m² • 12 mois • Livraison 2024 • Client privé</p>
-            </article>
-            <article>
-              <a href="images/projets/projet2.jpg" class="image"><img src="images/projets/projet2.jpg" alt="Réhabilitation mairie – Kaolack" /></a>
-              <h3 class="major">Réhabilitation mairie – Kaolack</h3>
-              <p>Renforcement structurel • Mise aux normes</p>
-            </article>
-            <article>
-              <a href="images/projets/projet3.jpg" class="image"><img src="images/projets/projet3.jpg" alt="Logements & commerces – Linguère" /></a>
-              <h3 class="major">Logements & commerces – Linguère</h3>
-              <p>Qualité & esthétique • Coordination des corps de métier</p>
-            </article>
-          </section>
+      </article>
+      <article class="card">
+        <img src="images/projets/projet3.jpg" alt="Logements & commerces – Linguère">
+        <div class="p">
+          <h3 class="m0">Logements & commerces – Linguère</h3>
+          <p>Qualité & esthétique • Coordination des corps de métier</p>
         </div>
-      </section>
-
-      <section id="footer">
-        <div class="inner">
-          <ul class="copyright">
-            <li>&copy; Baobab Construction.</li><li>Design: HTML5 UP</li>
-          </ul>
-        </div>
-      </section>
-
+      </article>
     </div>
+  </section>
+</main>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+<footer class="footer">
+  <div class="container">© Baobab Construction.</div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
 </html>

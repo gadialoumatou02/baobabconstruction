@@ -1,93 +1,57 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Contact – Baobab Construction</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/baobab.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  </head>
-  <body class="is-preload">
-    <div id="page-wrapper">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Baobab Construction</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt=""><span class="title">Baobab Construction</span></a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="menu" class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="realisations.html">Nos réalisations</a>
+      <a href="services.html">Nos services</a>
+      <a href="projets.html">Nos projets</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
 
-      <header id="header" class="alt">
-        <h1><a href="index.html"><img src="images/logo.png" class="brand-logo" alt="">Baobab Construction</a></h1>
-        <nav><a href="#menu">Menu</a></nav>
-      </header>
+<section class="hero"><div class="container"><h1 class="m0">Contact</h1><p>Parlons de votre projet — réponse rapide et précise.</p></div></section>
 
-      <nav id="menu">
-        <div class="inner">
-          <h2>Menu</h2>
-          <ul class="links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="realisations.html">Nos réalisations</a></li>
-            <li><a href="services.html">Nos services</a></li>
-            <li><a href="projets.html">Nos projets</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <a href="#" class="close">Fermer</a>
+<main>
+  <section class="section">
+    <div class="container">
+      <h2>Formulaire rapide</h2>
+      <form method="post" action="#">
+        <div class="row">
+          <div><label>Nom<br><input type="text" name="name"></label></div>
+          <div><label>Email<br><input type="email" name="email"></label></div>
         </div>
-      </nav>
-
-      <section id="banner" class="sub-banner">
-        <div class="inner">
-          <h2>Contact</h2>
-          <p>Discutons de votre projet — réponse rapide et précise.</p>
+        <div style="margin-top:12px"><label>Message<br><textarea name="message" rows="6"></textarea></label></div>
+        <div class="actions" style="margin-top:12px">
+          <button class="btn btn-submit primary">Envoyer</button>
         </div>
-      </section>
+      </form>
 
-      <section class="wrapper">
-        <div class="inner">
-          <h2 class="major">Formulaire</h2>
-          <form method="post" action="#">
-            <div class="fields">
-              <div class="field">
-                <label for="name">Nom</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-              </div>
-            </div>
-            <ul class="actions">
-              <li><input type="submit" value="Envoyer" /></li>
-            </ul>
-          </form>
+      <div class="sep" style="margin:28px 0"></div>
 
-          <h2 class="major" style="margin-top:2rem;">Coordonnées</h2>
-          <ul class="contact contact-page">
-            <li class="icon solid fa-home">
-              Baobab Construction<br />
-              Linguère, Région de Louga — Sénégal
-            </li>
-            <li class="icon solid fa-phone">+221 77 123 45 67</li>
-            <li class="icon solid fa-envelope">Email : en cours de création</li>
-            <li class="icon solid fa-globe"><a href="https://baobabconstruction.github.io" target="_blank">baobabconstruction.github.io</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="footer">
-        <div class="inner">
-          <ul class="copyright">
-            <li>&copy; Baobab Construction.</li><li>Design: HTML5 UP</li>
-          </ul>
-        </div>
-      </section>
-
+      <h2>Coordonnées</h2>
+      <ul class="list">
+        <li>📍 Linguère, Région de Louga, Sénégal</li>
+        <li>📞 +221 77 123 45 67</li>
+        <li>✉️ Email : en cours de création</li>
+        <li>🌍 Portfolio : <a href="https://baobabconstruction.github.io" target="_blank">baobabconstruction.github.io</a></li>
+      </ul>
     </div>
+  </section>
+</main>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+<footer class="footer"><div class="container">© Baobab Construction.</div></footer>
+<script src="assets/js/main.js"></script>
+</body>
 </html>
