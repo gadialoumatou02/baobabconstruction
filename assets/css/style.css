@@ -30,8 +30,8 @@ img,video{ max-width:100%; height:auto; display:block; }
 /*     HEADER     */
 /* ============== */
 .header {
-  background: var(--navy);
-  color: #fff;
+  background: var(--beige);
+  color:var(--navy);
   border-bottom: 4px solid var(--gold);
   position: sticky;
   top: 0;
@@ -58,36 +58,46 @@ img,video{ max-width:100%; height:auto; display:block; }
 }
 
 /* Bloc gauche : logo + nom + slogan centré */
-.nav-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 260px;
+/* groupe logo+titre+slogan */
+.nav-left{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 2px;            /* espace ENTRE le bloc .brand et le slogan */
 }
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #fff;
-  white-space: nowrap;
+
+/* le lien avec logo + titre */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:var(--navy);
+  white-space:nowrap;
 }
 .brand img {
-  height: 40px;
+  height: 50px;
 }
-.brand .title {
-  font-weight: 800;
-  letter-spacing: .3px;
+
+/* titre à côté du logo : enlève les marges par défaut */
+.brand .title{
+  margin: 0;           /* <<< clé pour rapprocher */
+  line-height: 1.1;
+  color:var(--navy);
 }
-.slogan-header {
-  margin-top: 4px;
-  font-size: 14px;
-  line-height: 1.35;
-  color: #fff;
-  text-align: center;
-  opacity: .95;
-  max-width: 420px;
+
+/* le slogan juste sous le titre */
+.slogan-header{
+  margin-top: 0;       /* enlève l’espace supplémentaire */
+  font-size:14px;
+  line-height:1.3;
+  color:var(--navy);  
+  text-align:center;
+  opacity:.95;
+  max-width:420px;
 }
+
+
 
 /* Menu à droite : toujours sur une ligne */
 .menu {
@@ -103,14 +113,14 @@ img,video{ max-width:100%; height:auto; display:block; }
   line-height: 1;
   padding: 10px 14px;
   border-radius: 8px;
-  color: #fff;
+  color: var(--navy);
   text-decoration: none;
   background: transparent;
   transition: background .15s ease-in-out, color .15s;
   white-space: nowrap; /* empêche les coupures de mots */
 }
 .menu a:hover {
-  background: rgba(255, 255, 255, .08);
+  background: var(--neutral);
 }
 .menu a.active {
   background: var(--gold);
@@ -152,6 +162,28 @@ img,video{ max-width:100%; height:auto; display:block; }
 .section .lead{ color:var(--gray); }
 .section{ overflow-wrap:anywhere; } /* évite débordements de mots longs */
 
+
+/* Conteneur des valeurs */
+.valeurs {
+  display: flex;
+  flex-wrap: wrap;           /* pour passer à la ligne si trop long */
+  justify-content: center;   /* centre horizontalement */
+  gap: 10px;                 /* espace entre les boutons */
+  margin-top: 20px;
+}
+
+/* Style des boutons / puces */
+.valeurs .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--gold);
+  border-radius: 25px;
+  background-color: var(--beige);
+  text-align: center;
+  font-weight: 500;
+  cursor: default;
+}
+
 /* ============== */
 /*     GRIDS      */
 /* ============== */
@@ -166,9 +198,7 @@ img,video{ max-width:100%; height:auto; display:block; }
 /*  DIRIGEANT (gauche) / VALEURS  */
 /* ============================== */
 .word_lead{ text-align:right; }     /* Mot du dirigeant */
-.valeurs{ text-align:left; }      /* Nos valeurs à droite */
-.valeurs ul{ list-style-type: none; padding:0; margin:0; }
-.valeurs li{ margin-bottom:6px; }
+
 
 /* ============== */
 /*     CARDS      */
