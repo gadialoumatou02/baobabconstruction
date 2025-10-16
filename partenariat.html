@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Devenir partenaire – Baobab Construction</title>
+  <link rel="stylesheet" href="assets/css/partenariat.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="nav-left">
+      <a href="index.html" class="brand">
+        <img src="images/logo0.png" alt="Baobab Construction">
+        <span class="title">Baobab Construction</span>
+      </a>
+      <div class="slogan-header">
+        « Nos racines réalisent vos projets, avec la solidité du baobab et la précision du bâtisseur. »
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="realisations.html">Nos réalisations</a>
+      <a href="services.html">Nos services</a>
+      <a href="projets.html">Nos projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <section class="hero hero--thin">
+    <div class="container">
+      <h1 class="m0" id="form-title">Devenir partenaire</h1>
+      <p class="lead" id="form-subtitle">Présentez votre intérêt et vos apports, nous vous recontactons rapidement.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form id="partner-form" class="card" style="padding:18px;">
+        <!-- Contexte caché (remplis par URL) -->
+        <input type="hidden" name="demande_type" id="demande_type" value="">
+        <input type="hidden" name="source_page" value="partenariat.html">
+
+        <div class="grid cols-2">
+          <div>
+            <h3 class="m0">Coordonnées de l’organisation</h3>
+            <ul class="list">
+              <li>
+                <label>Raison sociale*</label>
+                <input type="text" name="raison_sociale" required>
+              </li>
+              <li class="grid cols-2">
+                <div>
+                  <label>Secteur d’activité</label>
+                  <input type="text" name="secteur" placeholder="BTP, logistique, financier, etc.">
+                </div>
+                <div>
+                  <label>Pays / Ville</label>
+                  <input type="text" name="localisation" placeholder="Ex. Dakar, Sénégal">
+                </div>
+              </li>
+              <li class="grid cols-2">
+                <div>
+                  <label>Email professionnel*</label>
+                  <input type="email" name="email" required>
+                </div>
+                <div>
+                  <label>Téléphone*</label>
+                  <input type="tel" name="telephone" required>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="m0">Votre contact</h3>
+            <ul class="list">
+              <li class="grid cols-2">
+                <div>
+                  <label>Nom*</label>
+                  <input type="text" name="nom" required>
+                </div>
+                <div>
+                  <label>Prénom*</label>
+                  <input type="text" name="prenom" required>
+                </div>
+              </li>
+              <li>
+                <label>Fonction / Rôle*</label>
+                <input type="text" name="fonction" required placeholder="Ex. Directeur, Responsable achats…">
+              </li>
+              <li>
+                <label>Projet ciblé*</label>
+                <select name="projet" id="projet" required>
+                  <option value="">— Choisir un projet —</option>
+                  <option value="distribution">Centre de distribution de matériaux – Djolof</option>
+                  <option value="poles">Pôles internes : menuiserie, plomberie, électricité</option>
+                  <option value="immobilier">Cellule de gestion immobilière</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sep" style="margin:16px 0;"></div>
+
+        <div class="grid cols-2">
+          <div>
+            <h3 class="m0">Type d’apport souhaité*</h3>
+            <p class="m0" style="color:var(--gray)">Cochez une ou plusieurs cases</p>
+            <ul class="list">
+              <li><label><input type="checkbox" name="apport" value="financier"> Financier</label></li>
+              <li><label><input type="checkbox" name="apport" value="logistique"> Logistique</label></li>
+              <li><label><input type="checkbox" name="apport" value="materiel"> Matériel</label></li>
+              <li><label><input type="checkbox" name="apport" value="rh_formation"> Ressources humaines / Formation</label></li>
+              <li><label><input type="checkbox" name="apport" value="foncier"> Foncier</label></li>
+              <li>
+                <label>Autre (précisez)</label>
+                <input type="text" name="apport_autre" placeholder="Décrivez votre contribution">
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="m0">Rencontre avec le responsable projet*</h3>
+            <ul class="list">
+              <li>
+                <label><input type="radio" name="rencontre" value="distance" required> À distance (visioconférence)</label>
+              </li>
+              <li>
+                <label><input type="radio" name="rencontre" value="physique_dakar" required> Physique — Dakar</label>
+              </li>
+              <li>
+                <label><input type="radio" name="rencontre" value="physique_linguere" required> Physique — Linguère</label>
+              </li>
+              <li class="grid cols-2">
+                <div>
+                  <label>Créneau souhaité (date)</label>
+                  <input type="date" name="date_souhaitee">
+                </div>
+                <div>
+                  <label>Créneau souhaité (heure)</label>
+                  <input type="time" name="heure_souhaitee">
+                </div>
+              </li>
+              <li>
+                <label>Message</label>
+                <textarea name="message" rows="4" placeholder="Vos objectifs, périmètre, budget indicatif, etc."></textarea>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bloc autorisation -->
+        <div class="consent-block">
+          <input type="checkbox" name="consent" id="consent" required>
+          <label for="consent">J’autorise Baobab Construction à me contacter au sujet de ce projet.</label>
+        </div>
+
+        <!-- Boutons -->
+        <div class="actions">
+          <button type="submit" class="btn primary btn-submit">Envoyer ma demande</button>
+          <a href="projets.html" class="btn">Retour aux projets</a>
+        </div>
+
+        <p id="form-success" style="display:none;color:green;margin-top:10px;">Merci, votre demande a bien été enregistrée. Nous revenons vers vous rapidement.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <div>© Baobab Construction Tous droits réservés.</div>
+    <div>Design & Intégration : Baobab Construction</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/partenariat.js"></script>
+
+<script>
+ </script>
+</body>
+</html>

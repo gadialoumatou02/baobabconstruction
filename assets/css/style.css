@@ -292,3 +292,119 @@ button{ all:unset; }
 /* ============== */
 .sep{ height:1px; background:linear-gradient(90deg,var(--gold),transparent); }
 .m0{ margin:0; }
+
+
+/* Hero compact */
+.hero--thin { padding: 18px 0; background: #fff; }
+.hero__inner{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+}
+@media (max-width: 720px){
+  .hero__inner{ flex-direction:column; align-items:flex-start; }
+}
+
+/* Grille vidéo + panel */
+.service-grid{
+  display:grid; gap:22px;
+  grid-template-columns: 1.1fr 1fr;      /* vidéo un peu plus large */
+}
+@media (max-width: 980px){
+  .service-grid{ grid-template-columns: 1fr; }
+}
+
+/* Vidéo */
+.service-video{
+  margin:0; position:relative;
+  border-radius:14px; overflow:hidden;
+  border:1px solid rgba(0,0,0,.08); background:#000;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+.service-video video{ width:100%; height:auto; display:block; }
+.service-video figcaption{
+  position:absolute; left:12px; bottom:10px;
+  background:rgba(4,44,85,.85); color:#fff;
+  padding:6px 10px; border-radius:8px; font-size:12px;
+}
+
+/* Panel services */
+.service-panel{
+  background:#fff; border:1px solid rgba(0,0,0,.06);
+  border-radius:14px; padding:20px;
+  box-shadow:0 8px 24px rgba(0,0,0,.05);
+}
+.service-sub{ color:var(--gray); margin:6px 0 16px; }
+
+/* Liste stylée */
+.feature-list{
+  list-style:none; margin:0; padding:0; display:grid; gap:14px;
+}
+.feature-list li{
+  display:grid; grid-template-columns: 28px 1fr; gap:10px; align-items:flex-start;
+}
+.feature-list .ic{
+  width:28px; height:28px; border-radius:50%;
+  background:var(--gold); display:inline-grid; place-items:center;
+  position:relative;
+}
+.feature-list .ic::after{
+  content:""; width:12px; height:7px; border:2px solid #fff; border-top:none; border-right:none;
+  transform:rotate(-45deg); display:block;
+}
+.feature-list p{ margin:4px 0 0; color:var(--gray); }
+
+/* CTA boutons */
+.service-cta{ display:flex; gap:10px; margin-top:16px; flex-wrap:wrap; }
+
+/* Offres / cartes */
+.offer-grid .offer{
+  background:#fff; border:1px solid rgba(0,0,0,.06);
+  border-radius:14px; padding:18px;
+  box-shadow:0 6px 18px rgba(0,0,0,.05);
+}
+.offer h3{ margin:0 0 6px; }
+.offer p{ margin:0 0 10px; color:var(--gray); }
+.offer .mini{ list-style:none; margin:0; padding:0; display:flex; gap:10px; flex-wrap:wrap; }
+.offer .mini li{
+  border:1px solid var(--neutral); border-radius:20px; padding:6px 10px; font-size:13px; background:#fff;
+}
+
+
+/*Projets.html*/
+/* Hero compact */
+.hero--thin { padding: 18px 0; background:#fff; }
+.hero__inner{ display:flex; align-items:center; justify-content:space-between; gap:16px; }
+@media (max-width:720px){ .hero__inner{ flex-direction:column; align-items:flex-start; } }
+
+/* Grille des projets d’expansion */
+.expansion-grid{
+  display:grid; gap:18px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width:1100px){ .expansion-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width:720px){ .expansion-grid{ grid-template-columns: 1fr; } }
+
+.xp-card{
+  background:#fff; border:1px solid rgba(0,0,0,.06);
+  border-radius:14px; padding:18px;
+  box-shadow:0 6px 18px rgba(0,0,0,.05);
+  display:flex; flex-direction:column; gap:10px;
+}
+.xp-head{ display:flex; align-items:center; gap:10px; }
+.xp-ic{
+  width:40px; height:40px; border-radius:12px;
+  display:grid; place-items:center; font-size:22px;
+  background:rgba(179,121,15,.12); color:var(--navy);
+}
+.xp-intro{ margin:0; color:var(--gray); }
+.xp-list{ margin:0; padding-left:18px; display:grid; gap:6px; }
+.xp-list li{ margin:0; }
+.xp-cta{ display:flex; gap:10px; margin-top:auto; flex-wrap:wrap; }
+
+/* Look chips pour les checkboxes si tu veux un rendu boutons */
+.list input[type="checkbox"]{
+  accent-color: var(--gold);
+}
+.list input[type="radio"]{
+  accent-color: var(--gold);
+}
+
