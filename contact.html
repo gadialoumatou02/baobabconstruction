@@ -5,68 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact – Baobab Construction</title>
   <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
 </head>
 <body>
-<header class="header">
-  <div class="container nav">
-    <!-- Bloc gauche : logo + nom + slogan centré -->
-    <div class="nav-left">
-      <a href="index.html" class="brand">
-        <img src="images/logo0.png" alt="Baobab Construction">
-        <span class="title">Baobab Construction</span>
-      </a>
-      <div class="slogan-header">
-        « Nos racines réalisent vos projets, avec la solidité du baobab et la précision du bâtisseur. »
+  <!-- Header injecté -->
+  <div id="app-header"></div>
+  <section class="hero"><div class="container"><h1 class="m0">Contact</h1><p>Parlons de votre projet — réponse rapide et précise.</p></div></section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Formulaire rapide</h2>
+        <form method="post" action="#">
+          <div class="row">
+            <div><label>Nom<br><input type="text" name="name"></label></div>
+            <div><label>Email<br><input type="email" name="email"></label></div>
+          </div>
+          <div style="margin-top:12px"><label>Message<br><textarea name="message" rows="6"></textarea></label></div>
+          <div class="actions" style="margin-top:12px">
+            <button class="btn btn-submit primary">Envoyer</button>
+          </div>
+        </form>
+
+        <div class="sep" style="margin:28px 0"></div>
+
+        <h2>Coordonnées</h2>
+        <ul class="list">
+          <li>📍 Linguère, Louga, Sénégal</li>
+          <li>📍 Mbao, Dakar, Sénégal</li>
+          <li>📞 +221 77 123 45 67</li>
+          <li>✉️ Email : baobabconstruction2020@gmail.com>
+          <li>🌍 Portfolio : <a href="https://baobabconstruction.github.io" target="_blank">baobabconstruction.github.io</a></li>
+        </ul>
       </div>
-    </div>
+    </section>
+  </main>
+  <!-- Footer injecté -->
+  <div id="app-footer"></div>
 
-    <!-- Bloc droit : menu -->
-    <nav class="menu">
-      <a href="index.html" >Accueil</a>
-      <a href="realisations.html">Nos réalisations</a>
-      <a href="services.html">Nos services</a>
-      <a href="projets.html">Nos projets</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero"><div class="container"><h1 class="m0">Contact</h1><p>Parlons de votre projet — réponse rapide et précise.</p></div></section>
-
-<main>
-  <section class="section">
-    <div class="container">
-      <h2>Formulaire rapide</h2>
-      <form method="post" action="#">
-        <div class="row">
-          <div><label>Nom<br><input type="text" name="name"></label></div>
-          <div><label>Email<br><input type="email" name="email"></label></div>
-        </div>
-        <div style="margin-top:12px"><label>Message<br><textarea name="message" rows="6"></textarea></label></div>
-        <div class="actions" style="margin-top:12px">
-          <button class="btn btn-submit primary">Envoyer</button>
-        </div>
-      </form>
-
-      <div class="sep" style="margin:28px 0"></div>
-
-      <h2>Coordonnées</h2>
-      <ul class="list">
-        <li>📍 Linguère, Louga, Sénégal</li>
-        <li>📍 Mbao, Dakar, Sénégal</li>
-        <li>📞 +221 77 123 45 67</li>
-        <li>✉️ Email : baobabconstruction2020@gmail.com>
-        <li>🌍 Portfolio : <a href="https://baobabconstruction.github.io" target="_blank">baobabconstruction.github.io</a></li>
-      </ul>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
-    <div>© Baobab Construction. Tous droits réservés.</div>
-    <div>Design & Intégration</div>
-  </div>
-</footer><script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/inject.js"></script>
 </body>
 </html>

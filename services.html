@@ -1,155 +1,134 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nos services – Baobab Construction</title>
-  <link rel="stylesheet" href="assets/css/style.css"/>
-</head>
-<body>
-<header class="header">
-  <div class="container nav">
-    <!-- Bloc gauche : logo + nom + slogan centré -->
-    <div class="nav-left">
-      <a href="index.html" class="brand">
-        <img src="images/logo0.png" alt="Baobab Construction">
-        <span class="title">Baobab Construction</span>
-      </a>
-      <div class="slogan-header">
-        « Nos racines réalisent vos projets, avec la solidité du baobab et la précision du bâtisseur. »
-      </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nos services – Baobab Construction</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/footer.css">
 
-    <!-- Bloc droit : menu -->
-    <nav class="menu">
-      <a href="index.html" >Accueil</a>
-      <a href="realisations.html">Nos réalisations</a>
-      <a href="services.html" class="active">Nos services</a>
-      <a href="projets.html">Nos projets</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  </head>
+  <body>
+    <!-- Header injecté -->
+    <div id="app-header"></div>
+    <main class="main">
 
-
-<main class="main">
-
-  <!-- Bandeau court -->
-  <section class="hero hero--thin">
-    <div class="container hero__inner">
-      <div>
-        <h1 class="m0">Nos services</h1>
-        <p class="lead">Des solutions complètes, du plan à la livraison.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bloc vidéo + liste d’expertises -->
-  <section class="section">
-    <div class="container service-grid">
-      <!-- Vidéo 30s -->
-      <figure class="service-video">
-        <video
-          src="videos/services.mp4"
-          poster="images/services-poster.jpg"
-          autoplay
-          muted
-          loop
-          playsinline
-        ></video>
-        <figcaption>Notre savoir-faire en 30&nbsp;secondes</figcaption>
-      </figure>
-
-      <!-- Liste des services -->
-      <div class="service-panel">
-        <h2 class="m0">Expertises</h2>
-        <p class="service-sub">Qualité, sécurité & respect des délais.</p>
-
-        <ul class="feature-list">
-          <li>
-            <span class="ic"></span>
-            <div>
-              <strong>Construction de logements & bâtiments</strong>
-              <p>Projets clés en main, maîtrise des coûts et du planning.</p>
-            </div>
-          </li>
-          <li>
-            <span class="ic"></span>
-            <div>
-              <strong>Réhabilitation & rénovation</strong>
-              <p>Modernisation, renforcement, mises aux normes techniques.</p>
-            </div>
-          </li>
-          <li>
-            <span class="ic"></span>
-            <div>
-              <strong>Conception & plans</strong>
-              <p>Études 2D/3D, dossiers de permis, optimisation technique.</p>
-            </div>
-          </li>
-          <li>
-            <span class="ic"></span>
-            <div>
-              <strong>Devis & études techniques</strong>
-              <p>Chiffrage précis, méthodes, phasage et logistique.</p>
-            </div>
-          </li>
-          <li>
-            <span class="ic"></span>
-            <div>
-              <strong>Suivi & pilotage de chantiers</strong>
-              <p>Contrôle qualité, sécurité, coordination des corps d’état.</p>
-            </div>
-          </li>
-        </ul>
-
-        <div class="service-cta">
-          <a class="btn" href="realisations.html">Voir nos réalisations</a>
-          <a class="btn primary" href="contact.html">Parler à un expert</a>
-          <a class="btn primary" href="contact.html">Demander un devis</a>
+      <!-- Bandeau court -->
+      <section class="hero hero--thin">
+        <div class="container hero__inner">
+          <div>
+            <h1 class="m0">Nos services</h1>
+            <p class="lead">Des solutions complètes, du plan à la livraison.</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Cartes “offres” (optionnel mais très visuel) -->
-  <section class="section alt">
-    <div class="container">
-      <h2 class="m0">Offres populaires</h2>
-      <div class="grid cols-3 offer-grid">
-        <article class="offer">
-          <h3>Maison clé en main</h3>
-          <p>Conception, permis, construction, finitions.</p>
-          <ul class="mini">
-            <li>Planning garanti</li><li>Matériaux certifiés</li><li>Suivi hebdo</li>
-          </ul>
-        </article>
-        <article class="offer">
-          <h3>Rénovation complète</h3>
-          <p>Structure, électricité, plomberie, isolation.</p>
-          <ul class="mini">
-            <li>Audit initial</li><li>Devis ferme</li><li>Contrôles qualité</li>
-          </ul>
-        </article>
-        <article class="offer">
-          <h3>Maîtrise d’œuvre</h3>
-          <p>Pilotage, coordination, réception.</p>
-          <ul class="mini">
-            <li>Compte-rendu chantier</li><li>Budget maîtrisé</li><li>HSE</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
+      <!-- Bloc vidéo + liste d’expertises -->
+      <section class="section">
+        <div class="container service-grid">
+          <!-- Vidéo 30s -->
+          <figure class="service-video">
+            <video
+              src="videos/services.mp4"
+              poster="images/services-poster.jpg"
+              autoplay
+              muted
+              loop
+              playsinline
+            ></video>
+            <figcaption>Notre savoir-faire en 30&nbsp;secondes</figcaption>
+          </figure>
 
-</main>
+          <!-- Liste des services -->
+          <div class="service-panel">
+            <h2 class="m0">Expertises</h2>
+            <p class="service-sub">Qualité, sécurité & respect des délais.</p>
+
+            <ul class="feature-list">
+              <li>
+                <span class="ic"></span>
+                <div>
+                  <strong>Construction de logements & bâtiments</strong>
+                  <p>Projets clés en main, maîtrise des coûts et du planning.</p>
+                </div>
+              </li>
+              <li>
+                <span class="ic"></span>
+                <div>
+                  <strong>Réhabilitation & rénovation</strong>
+                  <p>Modernisation, renforcement, mises aux normes techniques.</p>
+                </div>
+              </li>
+              <li>
+                <span class="ic"></span>
+                <div>
+                  <strong>Conception & plans</strong>
+                  <p>Études 2D/3D, dossiers de permis, optimisation technique.</p>
+                </div>
+              </li>
+              <li>
+                <span class="ic"></span>
+                <div>
+                  <strong>Devis & études techniques</strong>
+                  <p>Chiffrage précis, méthodes, phasage et logistique.</p>
+                </div>
+              </li>
+              <li>
+                <span class="ic"></span>
+                <div>
+                  <strong>Suivi & pilotage de chantiers</strong>
+                  <p>Contrôle qualité, sécurité, coordination des corps d’état.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="service-cta">
+              <a class="btn" href="realisations.html">Voir nos réalisations</a>
+              <a class="btn primary" href="contact.html">Parler à un expert</a>
+              <a class="btn primary" href="contact.html">Demander un devis</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cartes “offres” (optionnel mais très visuel) -->
+      <section class="section alt">
+        <div class="container">
+          <h2 class="m0">Offres populaires</h2>
+          <div class="grid cols-3 offer-grid">
+            <article class="offer">
+              <h3>Maison clé en main</h3>
+              <p>Conception, permis, construction, finitions.</p>
+              <ul class="mini">
+                <li>Planning garanti</li><li>Matériaux certifiés</li><li>Suivi hebdo</li>
+              </ul>
+            </article>
+            <article class="offer">
+              <h3>Rénovation complète</h3>
+              <p>Structure, électricité, plomberie, isolation.</p>
+              <ul class="mini">
+                <li>Audit initial</li><li>Devis ferme</li><li>Contrôles qualité</li>
+              </ul>
+            </article>
+            <article class="offer">
+              <h3>Maîtrise d’œuvre</h3>
+              <p>Pilotage, coordination, réception.</p>
+              <ul class="mini">
+                <li>Compte-rendu chantier</li><li>Budget maîtrisé</li><li>HSE</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
 
-<footer class="footer">
-  <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
-    <div>© Baobab Construction. Tous droits réservés.</div>
-    <div>Design & Intégration</div>
-  </div>
-</footer><script src="assets/js/main.js"></script>
-</body>
+    <div id="app-footer"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/inject.js"></script>
+  </body>
 </html>

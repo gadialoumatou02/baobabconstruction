@@ -1,0 +1,29 @@
+/* ============== */
+/*     FOOTER     */
+/* ============== */
+
+.site-footer{
+  border-top:3px solid var(--gold);
+  background:var(--navy);
+  color:#fff;
+  padding:14px 0;        /* même densité que ta capture */
+}
+.footer-inner{
+  display:flex;
+  justify-content:space-between;   /* gauche / droite */
+  align-items:center;
+  gap:12px;
+  flex-wrap:nowrap;                /* évite le retour à la ligne */
+}
+.site-footer a{ color:#fff; text-decoration:underline; }
+
+/* Si l’écran est vraiment étroit, on autorise le wrap
+   mais on garde l’alignement gauche/droite autant que possible */
+@media (max-width: 360px){
+  .footer-inner{ flex-wrap:wrap; row-gap:6px; }
+  .footer-left, .footer-right{ flex:1 1 100%; }
+  .footer-left{ text-align:left; }
+  .footer-right{ text-align:right; }
+}
+
+
